@@ -1,7 +1,7 @@
 # Spring-xml-anno
 Spring with xml annotations
 
-## Stereotype Annotations
+## Stereotype Annotations for tier
 @Component, @Service, @Repository
 semantically all are the same
 
@@ -12,4 +12,4 @@ Means any POJO
 Means reside only business logic
 
 ### @Repository
-Called as data Layer, where we do any of the intraction with database like spring jdbc, hibernate, jpa etc
+Called as data Layer, where we do any of the interaction with database like spring jdbc, hibernate, jpa etc
