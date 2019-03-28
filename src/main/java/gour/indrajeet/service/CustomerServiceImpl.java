@@ -11,8 +11,14 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerService {
 
     // here we will have all the service logic on service tier
-    @Autowired
+//    @Autowired
     private CustomerRepository customerRepository;
+
+    @Autowired
+    public void setCustomerRepository(CustomerRepository customerRepository) {
+        System.out.println("We are using setter injection!!");
+        this.customerRepository = customerRepository;
+    }
 
     public List<Customer> findAll() {
         return customerRepository.findAll();
