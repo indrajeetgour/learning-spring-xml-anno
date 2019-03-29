@@ -8,8 +8,12 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-
+    <!--Configured with annotations-->
     <context:annotation-config/>
+
+    <!--load the property file for mentioned location-->
+    <context:property-placeholder location="app.properties"/>
+
 
     <context:component-scan base-package="gour.indrajeet"/>
 
